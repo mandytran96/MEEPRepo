@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meow</title>
+<link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+<header>
+  <hgroup>
+    <h1>Mandy's website </h1>
+    <h2>blooooooop </h2>
+  </hgroup>
+</header>
+<nav>
+  <ul>
+    <li><a href="#">Home </a> </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<section>
+
+  <header>
+    <h2>hallo </h2>
+  </header>
+  <article>
+    <figure> <img src="me.jpg" alt="this is an image of me">
+      <figcaption> fig.1 This is me </figcaption>
+    </figure>
+    <p>Social media platform focused on music 
+Find a way to potentially connect multiple platforms (spotify, apple music, tidal)
+Be able to follow people based on music-similar to old spotify update. See what friends are listening to when you click on an artist.
+Each artist should be an individual entity-there should be a chatroom associated with the artist, similar to reddit in which you can up vot
+</p>
+    <h4> bloop boop bopobpob <br>
+      &lt;!DOCTYPE html&gt; </h4>
+  </article>
+  <body>
+  <h3> What do i do? </h3>
+  <strong>Hello</strong> world </section>
+<footer> <small>Hi this is Mandy </small>
+  <ul>
+    <li><a href="#">Home</li>
+    <li><a href="#">About</li>
+    <li><a href="#">Contact</li>
+  </ul>
+</footer>
+</body>
+</html>
