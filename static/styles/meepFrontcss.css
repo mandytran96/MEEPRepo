@@ -1,6 +1,6 @@
 body {
     
-    background: url(2doorBack2.jpg);
+    background: url("{{ url_for('static',filename='2doorBack2.jpg') }}");
     color: white;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
