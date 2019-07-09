@@ -11,22 +11,18 @@
 <title>Meep</title>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Crete+Round|Just+Another+Hand|Pacifico|Satisfy&display=swap" rel="stylesheet">
+<<<<<<< HEAD:MeepFront.html
 <link rel="stylesheet" type="text/css" href="meepFrontcss.css">
 <link href="https://fonts.googleapis.com/css?family=Crete+Round|Just+Another+Hand|Pacifico|Poppins:800|Satisfy&display=swap" rel="stylesheet">
+=======
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/meepFrontcss.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Crete+Round|Just+Another+Hand|Pacifico|Poppins|Satisfy&display=swap" rel="stylesheet">
+>>>>>>> c1ccd4fe4a187a6bd3a282bb3b5d8106dba520ad:templates/layout.html
 
 </head>
 <body>
-<div class ="container">
-<h1>meep</h1>
-
-    <h2 class ="capt">a music-based social media platform for music enthusiasts</h2>
-
-</div>
-<div class ="myButtons">
-        <a href="#" class="button1">Sign Up</a>
-        <a href="#" class="button2">Sign in</a>
-        <a href="#" class="button3">About</a>
-</div>
+    {%block body%}
+    {%endblock%}
 </body>
 
 
