@@ -18,7 +18,7 @@ h1{
     font-size: 8em;
     opacity: 0.75;
     /*letter-spacing: 0.025em;*/
-    font-weight: 900;
+   
     position: absolute;
     left: 4%;
     top: 10%;
@@ -26,12 +26,12 @@ h1{
 .capt{
    
     opacity: 0.52;
-    font-weight: 900;
+   
     position:absolute;
     top: 36%;
     left: 7%;
     width: 50%;
- 
+    line-height: 1.2em;
 }
 
 a.button1{
@@ -39,7 +39,7 @@ a.button1{
      padding:0.5em 3em;
     font-size: 3em;
     color:#A56A8D;
-    font-weight: 900;
+    
     position:absolute;
     transition: .5s ease;
     top: 65%;
@@ -53,7 +53,7 @@ a.button2{
      padding:0.5em 3em;
     font-size: 3em;
     color: #AAA0A0;
-    font-weight: 900;
+    
     position:absolute;
     transition: .5s ease;
     top: 65%;
@@ -67,9 +67,9 @@ a.button3{
     padding:0.5em 3em;
     font-size: 2em;
     color: rgb(187, 184, 184);
-    font-weight: 900;
+    
     position:absolute;
     transition: .5s ease;
     top: 1%;
-    left: 90%;
+    left: 70%;
 }
