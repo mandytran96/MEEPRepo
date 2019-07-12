@@ -1,0 +1,75 @@
+body {
+    
+    background: url("{{ url_for('../static',filename='2doorBack2.jpg') }}");
+    color: white;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    /* Set rules to fill background */
+}
+
+
+  
+  
+h1{
+    
+    font-size: 8em;
+    opacity: 0.75;
+    /*letter-spacing: 0.025em;*/
+   
+    position: absolute;
+    left: 4%;
+    top: 10%;
+}
+.capt{
+   
+    opacity: 0.52;
+   
+    position:absolute;
+    top: 36%;
+    left: 7%;
+    width: 50%;
+    line-height: 1.2em;
+}
+
+a.button1{
+    display:inline-block;
+     padding:0.5em 3em;
+    font-size: 3em;
+    color:#A56A8D;
+    
+    position:absolute;
+    transition: .5s ease;
+    top: 65%;
+    left: 4%;
+}
+a.button1:hover{
+    font-size:4em;
+}
+a.button2{
+     display:inline-block;
+     padding:0.5em 3em;
+    font-size: 3em;
+    color: #AAA0A0;
+    
+    position:absolute;
+    transition: .5s ease;
+    top: 65%;
+    left: 24%;
+}
+a.button2:hover{
+    font-size:4em;
+}
+a.button3{
+    display:inline-block;
+    padding:0.5em 3em;
+    font-size: 2em;
+    color: rgb(187, 184, 184);
+    
+    position:absolute;
+    transition: .5s ease;
+    top: 1%;
+    left: 70%;
+}

@@ -1,0 +1,8 @@
+.DS_Store
+.idea/workspace.xml
+__pycache__/
+bin/
+include/
+lib/
+secure_passwords.pyc
+.Python
