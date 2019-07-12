@@ -11,7 +11,7 @@
 <title>Sign In</title>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Crete+Round|Just+Another+Hand|Pacifico|Satisfy&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="signin_page.css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/Signin_page.css')}}">
 <link href="https://fonts.googleapis.com/css?family=Crete+Round|Just+Another+Hand|Lobster|Pacifico|Poppins:700|Satisfy&display=swap" rel="stylesheet">
 
 </head>
@@ -26,15 +26,15 @@
             </div>
            
            <div class = "loginbox">
-               <img src ="meep2.jpg" class = "avatar">
+               <img src ="{{url_for('static',filename='meep2.jpg')}}" class = "avatar">
               <!-- <h2>Login here</h2> -->
 
-               <form>
+               <form method="POST">
                    <p>Username</p>
-                   <input type ="text" name ="" placeholder="Enter Username">
+                   <input type ="text" name ="username" placeholder="Enter Username">
                    <p>Password</p>
-                   <input type ="password" name ="" placeholder="Enter Password">
-                   <input type = "submit" name="" value ="Login">
+                   <input type ="password" name ="password" placeholder="Enter Password">
+                   <input type = "submit">
                    <a href ="#">Lost your password?</a> <br>
                    <a href ="#">Don't have an account?</a>
                </form>

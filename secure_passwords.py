@@ -3,14 +3,15 @@ import pymongo
 import os
 import urllib.parse
 from pymongo import MongoClient
-CREDS = "<PASSWORD>"
-client = pymongo.MongoClient("mongodb+srv://root:" +urllib.parse.quote(CREDS)+ "@cluster0-i0lbe.mongodb.net/test?retryWrites=true&w=majority")
+CREDS = "Ab45305006@"
+client = pymongo.MongoClient("mongodb+srv://root:"+urllib.parse.quote(CREDS)+"@cluster0-i0lbe.mongodb.net/test?retryWrites=true&w=majority")
 db = client.users
 
 class VaultKeeper():
     password = None
     key = None
     token = None
+
     def __init__(self,passwordIn):
         self.password = passwordIn
 
@@ -33,6 +34,7 @@ class VaultKeeper():
                 return True
         return False
 class Grab():
+
     def findUser(self,username):
         for i in db.users.find({}):
             if username in i.get('username'):
@@ -46,7 +48,9 @@ class Grab():
                 key = i['key']
                 f = Fernet(key)
                 passw = f.decrypt(i['password'])
-                if password == passw:
+                print(passw.decode('utf-8'),password)
+                if password == passw.decode('utf-8'):
+                    print("got here")
                     return True
         return False
 

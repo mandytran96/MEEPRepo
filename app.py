@@ -11,9 +11,10 @@ def signup():
     if request.method == 'POST':
         user = VaultKeeper(request.form['password'])
         if user.findUser(request.form['username']):
-            return redirect("signin.html")
+            print(user.findUser(request.form['username']))
+            return redirect("profile.html")
         user.addUser(str(request.form['username']))
-    return render_template('signup.html')
+    return render_template('Signup_page.html')
 
 @app.route('/signin',methods = ['GET','POST'])
 def signin():
@@ -21,8 +22,13 @@ def signin():
         test = Grab()
         if test.findUser(request.form['username']):
             if test.decrypt(request.form['username'],request.form['password']):
-                print("IT WORKED!!!!")
-    return render_template("signin.html")
+                print(test.decrypt(request.form['username'],request.form['password']))
+                return redirect("profile.html")
+    return render_template("Signin_page.html")
+
+@app.route('/profile')
+def profile():
+    return render_template("profile.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
