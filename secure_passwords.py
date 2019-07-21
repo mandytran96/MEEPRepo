@@ -3,7 +3,7 @@ import pymongo
 import os
 import urllib.parse
 from pymongo import MongoClient
-CREDS = "Ab45305006@"
+CREDS =
 client = pymongo.MongoClient("mongodb+srv://root:"+urllib.parse.quote(CREDS)+"@cluster0-i0lbe.mongodb.net/test?retryWrites=true&w=majority")
 db = client.users
 
@@ -24,7 +24,8 @@ class VaultKeeper():
         user = {
             "username": username,
             "password": self.token,
-            "key": self.key
+            "key": self.key,
+            "profile": "none"
         }
         db.users.insert_one(user)
 
@@ -53,6 +54,14 @@ class Grab():
                     print("got here")
                     return True
         return False
+
+    def has_profile(self,username):
+        user = db.users.find({"username":username})
+        if user.get("profile","not made") is not "none":
+            return True
+        else:
+            return False
+
 
 
 
