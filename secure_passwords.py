@@ -3,7 +3,7 @@ import pymongo
 import os
 import urllib.parse
 from pymongo import MongoClient
-CREDS =
+CREDS = "Ab45305006@"
 client = pymongo.MongoClient("mongodb+srv://root:"+urllib.parse.quote(CREDS)+"@cluster0-i0lbe.mongodb.net/test?retryWrites=true&w=majority")
 db = client.users
 
@@ -25,7 +25,9 @@ class VaultKeeper():
             "username": username,
             "password": self.token,
             "key": self.key,
-            "profile": "none"
+            "name":None,
+            "age": None,
+            
         }
         db.users.insert_one(user)
 
